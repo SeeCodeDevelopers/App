@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lgBack"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:src="@drawable/arrow"
+        android:background="@drawable/button_round"
+        android:textSize="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/lgBack"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="50dp"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logPicture"
+        android:background="@drawable/profile_button"
+        android:src="@drawable/profile"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/edEmail"
+        android:hint="Username"
+        android:layout_below="@+id/logPicture"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/edPassword"
+        android:hint="Password"
+        android:layout_below="@+id/edEmail"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btLogin"
+        android:text="LOGIN"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/sisonkebrown"
+        android:layout_below="@+id/edPassword"
+        android:layout_centerHorizontal="true"
+        />
+
+    
+
+</RelativeLayout>

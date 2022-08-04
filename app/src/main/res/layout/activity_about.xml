@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/aboutPage"
+    android:background="@color/snavy"
+    tools:context=".About">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/abtBack"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:src="@drawable/arrow"
+        android:background="@drawable/button_round"
+        android:textSize="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/aboutTag"
+        android:text="About Us"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/aboutCard"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_below="@+id/aboutTag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:layout_width="330dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/about_picture" />
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/textCard"
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/aboutCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/sisonkebrown"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Who we are"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

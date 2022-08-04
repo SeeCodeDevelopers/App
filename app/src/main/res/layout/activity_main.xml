@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/snavy"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_margin="50dp"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="80dp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_below="@+id/logo"
+        android:id="@+id/BtSignIn"
+        android:text="@string/sign_in"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/sisonkebrown"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtSignIn"
+        android:id="@+id/BtSignUp"
+        android:text="@string/sign_up"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_centerInParent="true"
+        />
+
+
+
+    
+
+</RelativeLayout>

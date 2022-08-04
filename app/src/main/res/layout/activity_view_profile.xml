@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfile">
+
+    <ImageButton
+        android:id="@+id/pBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/logout_button"
+        android:clickable="true"
+        android:src="@drawable/arrow"
+        android:textSize="50dp" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logPicture"
+        android:background="@drawable/profile_button"
+        android:src="@drawable/profile"/>
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logPicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner"
+        android:cursorVisible="true"
+        android:text="Edit Profile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/editProfile"
+        android:text="Notifications"
+        android:id="@+id/noTag"
+        android:textSize="28dp"
+        android:textColor="@color/black"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationCd"
+        android:layout_below="@+id/noTag"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="0dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_gravity="center_vertical"
+            android:text="Notifications"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <ToggleButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btNotification"
+            android:clickable="true"
+            android:foregroundTint="@color/white"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btLogOut"
+        android:layout_below="@+id/notificationCd"
+        android:layout_centerHorizontal="true"
+        android:text="Logout"
+        android:textSize="20dp"
+        android:backgroundTint="@color/black"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:id="@+id/logOut"
+        android:background="@drawable/logout_button"
+        android:src="@drawable/logout"
+
+        />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:id="@+id/profile"
+        android:background="@drawable/profile_button"
+        android:src="@drawable/profile"
+
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizCd"
+        android:layout_below="@+id/logOut"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/tgQuiz"
+            android:background="@drawable/quiz"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quiz"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btQuiz"
+            android:clickable="true"
+            android:background="@drawable/quiz_arrow"
+            android:foregroundTint="@color/white"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/galleryCd"
+        android:layout_below="@+id/quizCd"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/tgGallery"
+            android:background="@drawable/gallery"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Gallery"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btGallery"
+            android:clickable="true"
+            android:background="@drawable/quiz_arrow"
+            android:foregroundTint="@color/white"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tutorialCd"
+        android:layout_below="@id/galleryCd"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/tgTutorial"
+            android:background="@drawable/tutorial"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tutorial"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btTutorial"
+            android:clickable="true"
+            android:background="@drawable/quiz_arrow"
+            android:foregroundTint="@color/white"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/factCd"
+        android:layout_below="@+id/tutorialCd"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/tgFact"
+            android:background="@drawable/quiz"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Facts"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btFact"
+            android:clickable="true"
+            android:background="@drawable/quiz_arrow"
+            android:foregroundTint="@color/white"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutCd"
+        android:layout_below="@+id/factCd"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/tgAbout"
+            android:background="@drawable/quiz"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="About"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btAbout"
+            android:clickable="true"
+            android:background="@drawable/quiz_arrow"
+            android:foregroundTint="@color/white"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
