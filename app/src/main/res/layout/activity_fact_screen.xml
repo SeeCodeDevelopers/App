@@ -37,11 +37,44 @@
         android:id="@+id/safetyCard"
         android:clickable="true"
         android:focusable="true"
-        android:layout_margin="8dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
         android:elevation="12dp"
         app:cardCornerRadius="8dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/safetyIcon"
+        android:src="@drawable/safety"
+        app:layout_constraintBottom_toTopOf="@+id/safetyTag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/safetyTag"
+        android:text="SAFETY"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/safetyIcon"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 
@@ -54,15 +87,240 @@
         android:id="@+id/oceanCard"
         android:clickable="true"
         android:focusable="true"
-        android:layout_margin="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
         android:elevation="12dp"
         app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/oceanIcon"
+                android:src="@drawable/ocean"
+                app:layout_constraintBottom_toTopOf="@+id/oceanTag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/oceanTag"
+                android:text="OCEAN"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/oceanIcon"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
     </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@id/safetyCard"
+        android:id="@+id/SurfBoardCard"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/surfIcon"
+                android:src="@drawable/surfing"
+                app:layout_constraintBottom_toTopOf="@+id/surfTag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/surfTag"
+                android:text="SURF BOARDS"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/surfIcon"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@id/safetyCard"
+        android:layout_toRightOf="@+id/safetyCard"
+        android:id="@+id/FirstAidCard"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/firstIcon"
+                android:src="@drawable/first_aid"
+                app:layout_constraintBottom_toTopOf="@+id/firstTag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/firstTag"
+                android:text="FIRST-AID"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstIcon"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@id/SurfBoardCard"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/SisonkeCard"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="30dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/sisonkeIcon"
+                android:src="@drawable/logo_2"
+                app:layout_constraintBottom_toTopOf="@+id/sisonkeTag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/sisonkeTag"
+                android:text="SISONKE"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sisonkeIcon"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@id/SurfBoardCard"
+        android:layout_toRightOf="@+id/SisonkeCard"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/FishCard"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="30dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/fishIcon"
+                android:src="@drawable/fish"
+                app:layout_constraintBottom_toTopOf="@+id/fishTag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/fishTag"
+                android:text="FISH"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fishIcon"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
 
 
 

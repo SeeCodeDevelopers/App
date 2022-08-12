@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SisonkeQuiz">
         <activity
+            android:name=".QuizScreen"
+            android:exported="false" />
+        <activity
             android:name=".ViewProfile"
             android:exported="false" />
         <activity
